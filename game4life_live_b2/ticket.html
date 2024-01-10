@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="Karta za gaming evente">
+        <meta name="author" content="Nikola Jakov Pavečić">
+
+        <title>game4life i Bootstrap 5 template</title>
+
+        <!-- css podaci -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet">
+                
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/game4life-live.css" rel="stylesheet">
+
+    </head>
+    
+    <body>
+
+        <main>
+
+            <header class="site-header">
+                <div class="container">
+                    <div class="row">
+                        
+                        <div class="col-lg-12 col-12 d-flex flex-wrap">
+                            <p class="d-flex me-4 mb-0">
+                                <i class="bi-person custom-icon me-2"></i>
+                                <strong class="text-dark">Dobro došli na naš gaming event godine</strong>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        game4life
+                    </a>
+
+                    <a href="ticket.html" class="btn custom-btn d-lg-none ms-auto me-4">Kupnja ulaznice</a>
+    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="/index.html#section_1">Naslovna</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="/index.html#section_2">O nama</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="/index.html#section_3">Igre</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="/index.html#section_4">Raspored</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="/index.html#section_5">Cijene</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="/index.html#section_6">Kontakt</a>
+                            </li>
+                        </ul>
+
+                        <a href="ticket.html" class="btn custom-btn d-lg-block d-none">Ulaznice</a>
+                    </div>
+                </div>
+            </nav>
+
+
+            <section class="ticket-section section-padding">
+                <div class="section-overlay"></div>
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-10 mx-auto">
+                            <form class="custom-form ticket-form mb-5 mb-lg-0" action="#" method="post" role="form">
+                                <h2 class="text-center mb-4">Kupnja ulaznice</h2>
+
+                                <div class="ticket-form-body">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <input type="text" name="ticket-form-name" id="name_client" class="form-control" placeholder="Ime i prezime" required>
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <input type="email" name="ticket-form-email" id="email_client" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email adresa" required>
+                                        </div>
+                                    </div>
+
+                                    <input type="tel" class="form-control" name="ticket-form-phone" id = "phone_client" placeholder="Kontakt broj" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required="">
+
+                                    <h6>Odaberite tip ulaznice</h6>
+
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <div class="form-check form-control">
+                                                <input class="form-check-input" type="radio" name="TicketForm" id="early_client" value = "rane">
+                                                <label class="form-check-label" for="flexRadioDefault1">
+                                                    Rane karte 40€
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <div class="form-check form-check-radio form-control">
+                                                <input class="form-check-input" type="radio" name="TicketForm" id="standard_client" value = "standard">
+                                                <label class="form-check-label" for="flexRadioDefault2">
+                                                    Standard 80€
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <input type="number" name="ticket-form-number" id="ticket_number_client" class="form-control" placeholder="Broj karata" required>
+
+                                    <textarea name="ticket-form-message" rows="3" class="form-control" id="ticket_message_client" placeholder="Dodatni zahtjev"></textarea>
+
+                                    <div class="col-lg-4 col-md-10 col-8 mx-auto">
+                                        <button type="submit" id="kupnjaButton" class="form-control">Kupnja ulaznice</button>
+                                    </div>
+                                </div>
+                            </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+        <footer class="site-footer">
+            <div class="site-footer-top">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12">
+                            <h2 class="text-white mb-lg-0">game4life Live</h2>
+                        </div>
+
+                        <div class="col-lg-6 col-12 d-flex justify-content-lg-end align-items-center">
+                            <ul class="social-icon d-flex justify-content-lg-end">
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link">
+                                        <span class="bi-twitter"></span>
+                                    </a>
+                                </li>
+    
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link">
+                                        <span class="bi-apple"></span>
+                                    </a>
+                                </li>
+    
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link">
+                                        <span class="bi-instagram"></span>
+                                    </a>
+                                </li>
+
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link">
+                                        <span class="bi-youtube"></span>
+                                    </a>
+                                </li>
+
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link">
+                                        <span class="bi-pinterest"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12 mb-4 pb-2">
+                        <h5 class="site-footer-title mb-3">Napravili:<br>Nikola Jakov Pavečić<br>Florijan Matanović<br>Duje Medak</h5>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                        <h5 class="site-footer-title mb-3">Imate pitanja?</h5>
+
+                        <p class="text-white d-flex mb-1">
+                            <a href="tel: 090-080-0760" class="site-footer-link">
+                                Imaginarni broj telefona: 000 - 123- 4567
+                            </a>
+                        </p>
+
+                        <p class="text-white d-flex">
+                            <a href="mailto:npavecic@veleri.hr" class="site-footer-link">
+                                npavecic@veleri.hr
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-11 mb-4 mb-lg-0 mb-md-0">
+                        <h5 class="site-footer-title mb-3">Lokacija:</h5>
+
+                        <p class="text-white d-flex mt-3 mb-2">
+                        Vukovarska ulica, Rijeka, Hrvatska</p>
+
+                        <a class="link-fx-1 color-contrast-higher mt-3" href="https://www.google.com/maps/place/Polytechnic+of+Rijeka/@45.3383186,14.4217085,17z/data=!3m1!4b1!4m6!3m5!1s0x4764a0e031fe8c9d:0x670190c9dd8e38dd!8m2!3d45.3383149!4d14.4242834!16s%2Fg%2F1tvt93xr?entry=ttu">
+                            <span>Karta do nas</span>
+                            <svg class="icon" viewBox="0 0 32 32" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="15.5"></circle><line x1="10" y1="18" x2="16" y2="12"></line><line x1="16" y1="12" x2="22" y2="18"></line></g></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="site-footer-bottom">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-3 col-12 mt-5">
+                            <p class="izjavni-text">game4life imaginarni site</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- javaskript fileovi -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/custom.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+    kupnjaButton.addEventListener("click", function (event) {
+        event.preventDefault();
+        var radio_client;
+        if (document.getElementById("standard_client").checked) {
+            radio_client = "standard";
+        } else if (document.getElementById("early_client").checked) {
+            radio_client = "rane";
+        } else {
+            radio_client = "Greška.";
+        }
+        var ticket_number_client = document.getElementById("ticket_number_client").value;
+        var ticket_message_client = document.getElementById("ticket_message_client").value;
+
+        var name_client = document.getElementById("name_client").value;
+        var phone_client = document.getElementById("phone_client").value;
+        var email_client = document.getElementById("email_client").value;
+
+        // Send the first request
+        fetch("php/ticket1.php", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/x-www-form-urlencoded",
+            },
+            body: "radio_client=" + encodeURIComponent(radio_client) +
+                "&ticket_number_client=" + encodeURIComponent(ticket_number_client) +
+                "&ticket_message_client=" + encodeURIComponent(ticket_message_client),
+        })
+        .then(response => response.text())
+        .then(data => {
+            console.log("Server response (ticket1.php):", data);
+            // Send the second request
+            return fetch("php/ticket2.php", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded",
+                },
+                body: "name_client=" + encodeURIComponent(name_client) +
+                    "&phone_client=" + encodeURIComponent(phone_client) +
+                    "&email_client=" + encodeURIComponent(email_client),
+            });
+        })
+        .then(response => response.text())
+        .then(data => {
+            console.log("Server response (ticket2.php):", data);
+            // Send the third request
+            return fetch("php/ticket3.php", {
+                method: "GET",
+            });
+        })
+        .then(response => response.text())
+        .then(data => {
+            console.log("Server response (ticket3.php):", data);
+            // All three requests completed
+            alert("Sve kupnje su uspješno dodane!");
+        })
+        .catch(error => {
+            console.error("Error sending data:", error);
+            alert("Došlo je do problema prilikom dodavanja kupnji.");
+        });
+    });
+});
+        </script>
+    </body>
+</html>
